@@ -21,3 +21,13 @@ date = []
 #now to open CVS, below are a few sources that I found useful for this portion 
 #https://docs.python.org/3/library/csv.html
 #https://www.geeksforgeeks.org/working-csv-files-python/
+
+with open (PyBankcsv, newline="") as csvfile: 
+    csvreader = csv.reader(csvfile,delimiter="")
+    csv_header = next(csvreader)
+
+    #https://stackoverflow.com/questions/53474110/python-determine-change-in-value-from-one-period-to-the-next
+
+    for row in csvreader: 
+        count = count + 1
+    #count is needed in order to tally up the amount of months that are in the csv
