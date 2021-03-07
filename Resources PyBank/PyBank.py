@@ -52,3 +52,14 @@ with open (PyBankcsv, newline="") as csvfile:
     total_change_profit = total_change_profit + monthly_changes_profits
 
     initial_profit = final_profit
+    
+    print("----------------------------------------------------------")
+    print("Financial Analysis")
+    print("----------------------------------------------------------")
+    print("Total Months is: " + str(count))
+    print("Total Profit is: " + "$" + str(total_profit))
+    print("Average Change is : " + "$" + str(int(average_change_profits)))
+    print("Greatest Increase in Profits: " + str(increase_date) + " ($" + str(greatest_increase_profits) + ")")
+    print("Greatest Decrease in Profits: " + str(decrease_date) + " ($" + str(greatest_decrease_profits)+ ")")
+    print("----------------------------------------------------------")
+
