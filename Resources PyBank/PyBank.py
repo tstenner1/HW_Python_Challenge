@@ -31,3 +31,12 @@ with open (PyBankcsv, newline="") as csvfile:
     for row in csvreader: 
         count = count + 1
     #count is needed in order to tally up the amount of months that are in the csv
+    date.append(row[0])    
+
+    profit.append(row[1])
+    total_profit = total_profit + int(row[1])
+
+    final_profit = int(row[1]) 
+    monthly_changes_profits = final_profit - initial_profit 
+
+    monthly_changes.append(monthly_changes_profits)
