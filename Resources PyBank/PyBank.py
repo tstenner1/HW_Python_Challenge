@@ -29,7 +29,7 @@ with open (PyBankcsv, newline="") as csvfile:
     #https://stackoverflow.com/questions/53474110/python-determine-change-in-value-from-one-period-to-the-next
 
     for row in csvreader: 
-        count = count + 1
+    count = count + 1
     #count is needed in order to tally up the amount of months that are in the csv
     date.append(row[0])    
 
