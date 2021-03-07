@@ -40,3 +40,15 @@ with open (PyBankcsv, newline="") as csvfile:
     monthly_changes_profits = final_profit - initial_profit 
 
     monthly_changes.append(monthly_changes_profits)
+    
+    average_change_profits = (total_change_profit/count)
+
+    greatest_increase_profits = max(monthly_changes)
+    greatest_decrease_profits = min(monthly_changes)
+
+    increase_date = date[monthly_changes.index(greatest_increase_profits)]
+    decrease_date = date[monthly_changes.index(greatest_decrease_profits)]
+
+    total_change_profit = total_change_profit + monthly_changes_profits
+
+    initial_profit = final_profit
