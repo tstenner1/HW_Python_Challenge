@@ -1,12 +1,16 @@
+#import modules
 import os 
 import csv 
-import collections
-from collections import Counter 
 
-voters_candidates = []
-votes_per_candidate = []
+#setting the path to the csv file for the pypoll
+PyPollcsv = os.path.join("Resources","election_data.csv")
 
-election_data_csv_path = os.path.join("Resources","election_data.csv")
+#lists for data to be stored in
 
-#next step needs to be like pybank, open csv to read
-with open(election_data_csv_path, newline="") as csvfile: 
+vote_percent = []
+unique_candidate = []
+candidate_list = []
+count = 0
+vote_count = []
+
+ 
