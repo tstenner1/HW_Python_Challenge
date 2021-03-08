@@ -53,6 +53,8 @@ with open (PyBankcsv, newline="") as csvfile:
 
     initial_profit = final_profit
     
+    #watching the lecture videos again really helped with the above section
+    
     with open('financial_analysis.txt', 'w') as text:
     text.write("----------------------------------------------------------\n")
     text.write("  Financial Analysis"+ "\n")
