@@ -44,7 +44,7 @@ with open (Pypollcsv, newline= "") as csvfile:
   
   
 #need max vote count as well 
- votecount = votecount["percentage"].sortvalues()
+  votecount = votecount["percentage"].sortvalues()
  
- winning_vote_count = max(vote_count)
- winner = unique_candidate[vote_count.index(winning_vote_count)]
+  winning_vote_count = max(vote_count)
+  winner = unique_candidate[vote_count.index(winning_vote_count)]
