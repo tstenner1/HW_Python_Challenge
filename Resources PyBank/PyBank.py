@@ -35,6 +35,8 @@ with open (PyBankcsv, newline="") as csvfile:
 
     profit.append(row[1])
     total_profit = total_profit + int(row[1])
+    
+    #https://towardsdatascience.com/append-in-python-41c37453400
 
     final_profit = int(row[1]) 
     monthly_changes_profits = final_profit - initial_profit 
