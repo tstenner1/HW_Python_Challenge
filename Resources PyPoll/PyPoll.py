@@ -48,3 +48,15 @@ with open (Pypollcsv, newline= "") as csvfile:
  
   winning_vote_count = max(vote_count)
   winner = unique_candidate[vote_count.index(winning_vote_count)]
+
+print("Election Results")
+print("-------------------------------------")
+print("Total Votes: " + str(total_votes))
+print("-------------------------------------")
+for key, value in candidates.items():
+    print(key + ": " + str(candidates_percent[key]) + "% (" + str(value) + ")")
+print("-------------------------------------")
+print("Winner: " + winner)
+print("-------------------------------------")
+
+new_file = open("pollresults.txt", "w")
