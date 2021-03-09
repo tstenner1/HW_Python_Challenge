@@ -70,3 +70,6 @@ for key, value in candidates.items():
 new_file.write("------------------------------------- \n")
 new_file.write("Winner: " + winner + "\n")
 new_file.write("------------------------------------- \n")
+
+#to write a new file containing the info of the data that we are striving to get 
+#https://www.w3schools.com/python/python_file_write.asp
