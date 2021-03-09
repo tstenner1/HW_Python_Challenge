@@ -60,3 +60,13 @@ print("Winner: " + winner)
 print("-------------------------------------")
 
 new_file = open("pollresults.txt", "w")
+
+new_file.write("Election Results \n")
+new_file.write("------------------------------------- \n")
+new_file.write("Total Votes: " + str(total_votes) + "\n")
+new_file.write("------------------------------------- \n")
+for key, value in candidates.items():
+    new_file.write(key + ": " + str(candidates_percent[key]) + "% (" + str(value) + ") \n")
+new_file.write("------------------------------------- \n")
+new_file.write("Winner: " + winner + "\n")
+new_file.write("------------------------------------- \n")
