@@ -66,6 +66,8 @@ with open (PyBankcsv, newline="") as csvfile:
     text.write("    Greatest Decrease in Profits: " + str(decrease_date) + " ($" + str(greatest_decrease_profits) + ")\n")
     text.write("----------------------------------------------------------\n")
     
+    #https://www.w3schools.com/python/python_file_write.asp
+    
     print("----------------------------------------------------------")
     print("Financial Analysis")
     print("----------------------------------------------------------")
