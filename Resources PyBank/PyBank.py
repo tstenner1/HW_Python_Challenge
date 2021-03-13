@@ -29,33 +29,33 @@ with open (PyBankcsv, newline="") as csvfile:
     #https://stackoverflow.com/questions/53474110/python-determine-change-in-value-from-one-period-to-the-next
 
     for row in csvreader: 
-    count = count + 1
-    #count is needed in order to tally up the amount of months that are in the csv
-    date.append(row[0])    
+        count = count + 1
+        #count is needed in order to tally up the amount of months that are in the csv
+        date.append(row[0])    
 
-    profit.append(row[1])
-    total_profit = total_profit + int(row[1])
+        profit.append(row[1])
+        total_profit = total_profit + int(row[1])
     
-    #https://towardsdatascience.com/append-in-python-41c37453400
+        #https://towardsdatascience.com/append-in-python-41c37453400
 
-    final_profit = int(row[1]) 
-    monthly_changes_profits = final_profit - initial_profit 
+        final_profit = int(row[1]) 
+        monthly_changes_profits = final_profit - initial_profit 
 
-    monthly_changes.append(monthly_changes_profits)
+        monthly_changes.append(monthly_changes_profits)
     
-    average_change_profits = (total_change_profit/count)
+        average_change_profits = (total_change_profit/count)
 
-    greatest_increase_profits = max(monthly_changes)
-    greatest_decrease_profits = min(monthly_changes)
+        greatest_increase_profits = max(monthly_changes)
+        greatest_decrease_profits = min(monthly_changes)
 
-    increase_date = date[monthly_changes.index(greatest_increase_profits)]
-    decrease_date = date[monthly_changes.index(greatest_decrease_profits)]
+        increase_date = date[monthly_changes.index(greatest_increase_profits)]
+        decrease_date = date[monthly_changes.index(greatest_decrease_profits)]
 
-    total_change_profit = total_change_profit + monthly_changes_profits
+        total_change_profit = total_change_profit + monthly_changes_profits
 
-    initial_profit = final_profit
+        initial_profit = final_profit
     
-    #watching the lecture videos again really helped with the above section
+        #watching the lecture videos again really helped with the above section
     
     with open('financial_analysis.txt', 'w') as text:
     text.write("----------------------------------------------------------\n")
