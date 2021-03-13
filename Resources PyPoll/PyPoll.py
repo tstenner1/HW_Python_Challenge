@@ -9,7 +9,7 @@ PyPollcsv = os.path.join("Resources","election_data.csv")
 
 vote_percent = []
 unique_candidate = []
-candidate_list = []
+candidatelist = []
 count = 0
 vote_count = []
 
