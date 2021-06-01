@@ -1,14 +1,10 @@
 # Python 
 
-Below is a trimmed down readme highlighting the specific skills executed in this assignment.
-
-## Background
-
-Both of these challenges encompasses a real-world situation where your newfound Python scripting skills can come in handy. These challenges are far from easy so expect some hard work ahead!
+Both of these challenges encompasses a real-world situation where my newfound Python scripting skills come into play.
 
 ## PyBank
 
-* Your task is to create a Python script that analyzes the records to calculate each of the following:
+* My task is to create a Python script that analyzes the records to calculate the following:
 
   * The total number of months included in the dataset
 
@@ -20,14 +16,11 @@ Both of these challenges encompasses a real-world situation where your newfound 
 
   * The greatest decrease in losses (date and amount) over the entire period
 
-
-* In addition, your final script should both print the analysis to the terminal and export a text file with the results.
-
 ## PyPoll
 
-* In this challenge, you are tasked with helping a small, rural town modernize its vote counting process.
+* In this challenge, I am tasked with helping a small, rural town modernize its vote counting process.
 
-* You will be give a set of poll data called [election_data.csv](PyPoll/Resources/election_data.csv). The dataset is composed of three columns: `Voter ID`, `County`, and `Candidate`. Your task is to create a Python script that analyzes the votes and calculates each of the following:
+* I am given a set of poll data called [election_data.csv](PyPoll/Resources/election_data.csv). The dataset is composed of three columns: `Voter ID`, `County`, and `Candidate`. My task is to create a Python script that analyzes the votes and calculates each of the following:
 
   * The total number of votes cast
 
@@ -38,9 +31,6 @@ Both of these challenges encompasses a real-world situation where your newfound 
   * The total number of votes each candidate won
 
   * The winner of the election based on popular vote.
-
-
-* In addition, your final script should both print the analysis to the terminal and export a text file with the results.
 
 ## Copyright
 
