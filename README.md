@@ -4,7 +4,7 @@ Both of these challenges encompasses a real-world situation where my newfound Py
 
 ## PyBank
 
-* My task is to create a Python script that analyzes the records to calculate the following:
+* My task is to create a Python script that analyzes the financial records of my company to calculate the following:
 
   * The total number of months included in the dataset
 
